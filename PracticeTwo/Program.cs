@@ -100,7 +100,20 @@ namespace PracticeTwo
             }
             while (guess == statement || Convert.ToInt32(guess) != myNum);*/
 
+            /* array assignment
+             int[] num = new int[5];
 
+             num[0] = 10;
+
+             foreach (int dan in num)
+             {
+                 Console.WriteLine(dan);
+             }*/
+
+            
         }
+
+        
     }
+
 }
