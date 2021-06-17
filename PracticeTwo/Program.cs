@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PracticeTwo
 {
@@ -39,8 +40,8 @@ namespace PracticeTwo
            int name = Convert.ToInt32(Add(1, 2));
            Console.WriteLine(name);*/
 
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
 
             /*Practicing Selection Statements if else if switch
@@ -100,20 +101,118 @@ namespace PracticeTwo
             }
             while (guess == statement || Convert.ToInt32(guess) != myNum);*/
 
-            /* array assignment
-             int[] num = new int[5];
+        /* array assignment
+         int[] num = new int[5];
 
-             num[0] = 10;
+         num[0] = 10;
 
-             foreach (int dan in num)
-             {
-                 Console.WriteLine(dan);
-             }*/
+         foreach (int dan in num)
+         {
+             Console.WriteLine(dan);
+         }*/
 
-            
+        /* Continue practice
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 5)
+
+                continue;
+                Console.WriteLine(i);
+        }*/
+
+        /* Lists practice
+        List<int> name = new List<int>();
+        for (int i = 0; i < 50; i++)
+        {
+            name.Add(i);
+        }
+        foreach (int num in name)
+        {
+            Console.WriteLine(num);
+        }
+        name.Remove(name[4]);
+        foreach (int num in name)
+        {
+            Console.WriteLine(num);
+        }*/
+        /* CodeWars
+        Average double[] name = new double[] { 2, 3, 7, 6 };
+        Console.WriteLine(FindAverage(name));
+
+    }
+    public static double FindAverage(double[] array)
+    {
+        double sum = 0;
+        if (array.Length > 0)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = array[i] + sum;
+            }
+            return sum / array.Length;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+        static void Main(string[] args)
+        {
+            string[] names = new string[] { "danielle", "doesnt", "like", "eggs" };
+            Console.WriteLine(Smash(names));
+        }
+        public static string Smash(string[] words)
+        {
+            string combine = string.Join(" ", words);
+            return combine;
+
         }
 
-        
-    }
+        static void Main(string[] args)
+        {
 
+        }
+        public static float Combat(float health, float damage)
+        {
+            var healthNew = health - damage;
+            if (healthNew > 0)
+            {
+                return healthNew;
+            }
+            else
+            {
+                return 0;
+            }
+
+                
+        }
+        static void Main(string[] args)
+        {
+            string names = "3.50 like eggs";
+            Console.WriteLine(IsLockNessMonster(names));
+        }
+        public static bool IsLockNessMonster(string sentence)
+        {
+           
+            if (sentence.ToLower().Contains("tree fiddy") == true)
+            {
+                return true;
+            }
+            else if (sentence.ToLower().Contains("three fifty") == true)
+            {
+                return true;
+            }
+            else if (sentence.Contains("3.50") == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }*/
+    }
 }
+
+
+
