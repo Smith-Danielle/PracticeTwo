@@ -259,7 +259,31 @@ namespace PracticeTwo
                 }
             }
         }*/
+        /* CodeWars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(OddCount(7));
+        }
+        public static ulong OddCount(ulong n)
+        {
+            //This works but CodeWars didnt like it!!!!!!!!!!!!
+            List<ulong> odds = new List<ulong>();
+            
+            
+            for (ulong i = 0; i < n; i++)
+            {
+                if (i % 2 != 0)
+                {
+                  odds.Add(i);
+                }
+            }
+            ulong oddsAnswer = Convert.ToUInt64(odds.Count);
+            return oddsAnswer;
 
+            //But they want this one! 
+            return n / 2;*/
+
+        }
     }
 }
 
