@@ -281,9 +281,86 @@ namespace PracticeTwo
             return oddsAnswer;
 
             //But they want this one! 
-            return n / 2;*/
+            return n / 2;
+
+        }*/
+        /* CodeWars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(MakeNegative(-5));
+            Console.WriteLine(MakeUpperCase("until"));
+            Console.WriteLine(ReverseSeq(8));
+            object[] myArray = new object[] { "danielle", "danica", "marrissa", "smith" };
+            object[] numbers = new object[] { 1, 2, 3, 4, 5 };
+            object[] chars = new object[] { 'a', '2', '3', 'h', 'y' };
+            Console.WriteLine(Check(myArray, "danielle"));
+            Console.WriteLine(Check(numbers, 5));
+            Console.WriteLine(Check(chars, '1'));
+        }
+        public static int MakeNegative(int number)
+        {
+            int answer;
+            if (number > 0)
+            {
+                answer = number - number - number;
+                return answer;
+            }
+            else
+            {
+                return number;
+            }
 
         }
+        public static string MakeUpperCase(string str)
+        {
+            return str.ToUpper();
+        }
+        public static int[] ReverseSeq(int n)
+        {
+            int[] numArray = new int[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                numArray[i] = i + 1;
+            }
+            Array.Reverse(numArray);
+            return numArray;
+
+        }
+        public static bool Check(object[] a, object x)
+        {
+            List<object> newList = new List<object>();
+            foreach (object item in a)
+            {
+                newList.Add(item);
+            }
+            return newList.Contains(x);
+
+            
+            
+        }*/
+        static void Main(string[] args)
+        {
+            Car myCar = new Car();
+            myCar.Make = "Subaru";
+            myCar.Model = "BRZ";
+            myCar.Year = 2018;
+
+            Car hisCar = new Car()
+            {
+                Make = "Mercedes",
+                Model = "C350",
+                Year = 2008
+            };
+
+            Car herCar = new Car() { Make = "Chevy", Model = "Camaro", Year = 2000 };
+
+            Car theirCar = new Car("Ford", "Focus", 2020);
+
+            myCar.StateCar();
+            hisCar.CarAge(2021);
+        }
+
     }
 }
 
