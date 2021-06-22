@@ -339,6 +339,7 @@ namespace PracticeTwo
             
             
         }*/
+        /* Classes practice 
         static void Main(string[] args)
         {
             Car myCar = new Car();
@@ -359,9 +360,92 @@ namespace PracticeTwo
 
             myCar.StateCar();
             hisCar.CarAge(2021);
+        }*/
+        /*static void Main(string[] args)
+        {
+            Console.WriteLine(Remove_char("Danielle"));
+            Console.WriteLine(NumberToString(1230));
+            bool[] sheepCount = new bool[] { true, true, true, false, true, true, true, true, true, false, true, false, true, false, false, true, true, true, true, true, false, false, true, true };
+            Console.WriteLine(CountSheeps(sheepCount));
+            Console.WriteLine(Quote("Conor McGregor"));
+        }
+        public static string Remove_char(string s)
+        {
+            
+            string sNew = s.Remove(s.Length - 1);
+            string sNewest = sNew.Remove(0, 1);
+            return sNewest;
+        }
+        public static string NumberToString(int num)
+        {
+            string intString = Convert.ToString(num);
+            return intString;
+        }
+        public static int CountSheeps(bool[] sheeps)
+        {
+            List<int> trueSheep = new List<int>();
+            foreach (bool sheep in sheeps)
+            {
+                if (sheep == true)
+                {
+                    trueSheep.Add(1);
+                }
+            }
+            return trueSheep.Count;
+        }
+        public static string Quote(string fighter)
+        {
+            string fighterFinal = fighter.ToLower();
+            if (fighterFinal == "George Saint Pierre")
+            {
+                return "I am not impressed by your performance.";
+            }
+            else 
+            {
+                return "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+            }
+           
+        */
+        /* CodeWars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(NthEven(100));
+        }
+        public static int NthEven(int n)
+        {
+            int[] numbers = new int[n * 2];
+            for (int i = 0; i < n * 2; i++)
+            {
+                if (i % 2 == 0 )
+                {
+                    numbers[i] = i;
+                    
+                }
+                
+            }
+            return numbers[n + 1];
+        }*/
+        /* SoloLearn Recursion
+        static int Points(int levels)
+        {
+
+            if (levels == 1)
+            {
+                return 1;
+            }
+            
+                return levels + Points(levels - 1);
+            
+            
+        }
+        static void Main(string[] args)
+        {
+
+            int levels = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Points(levels));
+        }*/
         }
 
-    }
 }
 
 
