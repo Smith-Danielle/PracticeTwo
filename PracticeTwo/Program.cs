@@ -444,7 +444,24 @@ namespace PracticeTwo
             int levels = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Points(levels));
         }*/
+        /*static void Main(string[] args)
+        {
+            Car danielle = new Car();
+            danielle.Name = "Smith";
+
+        }*/
+        static void Main(string[] args)
+        {
+            string postText = Console.ReadLine();
+
+            Post post = new Post();
+            post.Text = postText;
+            post.ShowPost();
+
         }
+    }
+
+
 
 }
 

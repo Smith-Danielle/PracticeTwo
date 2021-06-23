@@ -24,8 +24,14 @@ namespace PracticeTwo
         {
             Console.WriteLine($"This car is {x - Year} years old.");
         }
-
+        public void print()
+        {
+            Console.WriteLine("Hey girl");
+        }
+        public string name;
+        public string Name { get { return name; } set { name = value; } }
     }
+    
 
 
 }
