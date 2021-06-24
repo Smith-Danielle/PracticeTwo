@@ -450,6 +450,7 @@ namespace PracticeTwo
             danielle.Name = "Smith";
 
         }*/
+        /* SoloLearn 
         static void Main(string[] args)
         {
             string postText = Console.ReadLine();
@@ -458,7 +459,92 @@ namespace PracticeTwo
             post.Text = postText;
             post.ShowPost();
 
+        }*/
+        /*CodeWars
+        static void Main(string[] args)
+        {
+            /*string[] websites = new string[1000];
+            for(int i = 0; i < 1000; i++)
+            {
+                websites[i] = "codewars";
+
+            }
+            foreach (var items in websites)
+            {
+                Console.WriteLine(items);
+            }
+            Console.WriteLine(websites.Length);
+
+        }*/
+        /*CodeWars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Solution(10));
         }
+        public static int Solution(int value)
+        {
+            List<int> numbers = new List<int>();
+            int sum = 0;
+            for (int i = 0; i < value; i++)
+            {
+                if (i % 3 == 0 || i % 5 == 0)
+                {
+                    numbers.Add(i);
+                    
+                }
+            }
+            foreach (int item in numbers)
+            {
+                sum += item;
+            }
+            return sum;
+        }*/
+
+        /* SoloLearn
+        static void Main(string[] args)
+        {
+            string name = "Danielle";
+            string newName = name.Insert(1, "Hello, My name is");
+            Console.WriteLine(newName);
+        }*/
+        /* SoloLearn
+        static void Main(string[] args)
+        {
+            string[] words = {
+                "home",
+                "programming",
+                "victory",
+                "C#",
+                "football",
+                "sport",
+                "book",
+                "learn",
+                "dream",
+                "fun"
+            };
+
+            string letter = Console.ReadLine();
+
+            int count = 0;
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Contains(letter))
+                {
+                    count++;
+                    Console.WriteLine(words[i]);
+
+                }
+                
+            }
+            if (count == 0)
+            {
+                Console.WriteLine("No match");
+            }
+
+        }*/
+
+
     }
 
 
