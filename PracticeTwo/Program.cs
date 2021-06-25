@@ -543,12 +543,52 @@ namespace PracticeTwo
             }
 
         }*/
+        /*CodeWars
+        static void Main(string[] args)
+        {
+            int[] array = new int[] { 0, 1, 1, 1, 2, 1, 2, 0, 9, 1, 8, 2, 0 };
+            Console.WriteLine(MoveZeroes(array));
+            string dan = "12";
+            string smi = "3";
+            Console.WriteLine(sumStrings(dan, smi));
+            
+        }
+        public static int[] MoveZeroes(int[] arr)
+        {
+            List<int> numbers = new List<int>();
+            foreach (var item in arr)
+            {
+                if (item > 0)
+                {
+                    numbers.Add(item);
+
+                }
+            }
+            foreach (var item in arr)
+            {
+                if (item == 0)
+                {
+                    numbers.Add(item);
+
+                }
+            }
+            var newArray = numbers.ToArray();
+
+            return newArray;
+        }
+        public static string sumStrings(string a, string b)
+        {
+            int num = Convert.ToInt32(a);
+            int num1 = Convert.ToInt32(b);
+            int sum = num + num1;
+            
+            string answer = Convert.ToString(sum);
+            return answer;
+        }*/
+        
 
 
     }
-
-
-
 }
 
 
