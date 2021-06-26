@@ -651,6 +651,41 @@ namespace PracticeTwo
 
 
         }*/
+        /*Codewars find the differnt int.
+        public static int Find(int[] integers)
+        {
+            int answer1 = 0;
+            int answer2 = 0;
+            int evenCount = 0;
+            for (int i = 0; i < integers.Length; i++)
+            {
+                if (integers[i] % 2 == 0)
+                {
+                    evenCount++;
+                }
+            }
+            if (evenCount == 1)
+            {
+                foreach (var item in integers)
+                {
+                    if (item % 2 == 0)
+                    {
+                        answer1 = item;
+                    }
+                }
+            }
+            else
+            {
+                foreach (var item in integers)
+                {
+                    if (item % 2 != 0)
+                    {
+                        answer2 = item;
+                    }
+                }
+            }
+            return Math.Max(answer1, answer2);
+        }*/
 
 
     }
