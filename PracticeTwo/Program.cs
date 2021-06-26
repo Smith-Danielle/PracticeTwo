@@ -585,15 +585,16 @@ namespace PracticeTwo
            
             return sum.ToString();
         }*/
+        /* Codewars / SoloLearn
         static void Main(string[] args)
         {
             Console.WriteLine(GetVowelCount("abracadabra"));
-            //Interpret("9");
+            Interpret("9");
             Console.WriteLine(Math.Sqrt(9));
             string name = "danielle";
             string last = " smith not hall";
             Console.WriteLine(String.Concat(name, last));
-            Console.WriteLine(name[4]);
+            char index = name[4];
 
         }
         public static int PositiveSum(int[] arr)
@@ -623,7 +624,7 @@ namespace PracticeTwo
             return count;
 
         }
-        /*public static void Interpret(string code)
+        public static void Interpret(string code)
         {
 
             if (code == "H")
