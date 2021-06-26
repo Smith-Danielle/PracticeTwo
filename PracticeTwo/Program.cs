@@ -543,11 +543,11 @@ namespace PracticeTwo
             }
 
         }*/
-        /*CodeWars
-        static void Main(string[] args)
+        //CodeWars
+        /*static void Main(string[] args)
         {
-            int[] array = new int[] { 0, 1, 1, 1, 2, 1, 2, 0, 9, 1, 8, 2, 0 };
-            Console.WriteLine(MoveZeroes(array));
+            //int[] array = new int[] { 0, 1, 1, 1, 2, 1, 2, 0, 9, 1, 8, 2, 0 };
+            //Console.WriteLine(MoveZeroes(array));
             string dan = "12";
             string smi = "3";
             Console.WriteLine(sumStrings(dan, smi));
@@ -582,10 +582,74 @@ namespace PracticeTwo
             int num1 = Convert.ToInt32(b);
             int sum = num + num1;
             
-            string answer = Convert.ToString(sum);
-            return answer;
+           
+            return sum.ToString();
         }*/
-        
+        static void Main(string[] args)
+        {
+            Console.WriteLine(GetVowelCount("abracadabra"));
+            //Interpret("9");
+            Console.WriteLine(Math.Sqrt(9));
+            string name = "danielle";
+            string last = " smith not hall";
+            Console.WriteLine(String.Concat(name, last));
+            Console.WriteLine(name[4]);
+
+        }
+        public static int PositiveSum(int[] arr)
+        {
+            int postives = 0;
+            foreach (var item in arr)
+            {
+                if (item % 2 == 0)
+                {
+                    postives += item;
+                }
+            }
+            return postives;
+        }
+        public static int GetVowelCount(string str)
+        {
+            int count = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+                {
+                    count++;
+                }
+
+            }
+            return count;
+
+        }
+        /*public static void Interpret(string code)
+        {
+
+            if (code == "H")
+            {
+                Console.WriteLine("Hello World");
+            }
+            else if (code == "Q")
+            {
+                Console.WriteLine("Q");
+            }
+            else if (code == "9")
+            {
+                for (int i = 99; i > 1; i--)
+                {
+                    Console.WriteLine($"{i} bottles of beer on the wall, {i} bottles of beer.
+
+                        $"Take one down and pass it arround, {i - 1} bottles of beer on the wall.");
+                }
+                Console.WriteLine("1 bottle of beer on the wall, 1 bottle of beer. n/" +
+                        "Take one down and pass it arround, no more bottles of beer on the wall. n/" +
+                        "No more bottles of beer on the wall, no more bottles of beer. n/" +
+                        "Go to the store and buy some more, 99 bottles of beer on the wall.");
+            }
+
+
+        }*/
 
 
     }
