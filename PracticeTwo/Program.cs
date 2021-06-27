@@ -686,9 +686,57 @@ namespace PracticeTwo
             }
             return Math.Max(answer1, answer2);
         }*/
+        /* CodeWars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Disemvowel("Hello, my name is Danielle."));
+            Console.WriteLine(Solution("Danielle"));
+        }
+        public static string Disemvowel(string str)
+        {
+            
+            string newString = "";
+           
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u' && str[i] != 'A' && str[i] != 'E' && str[i] != 'I' && str[i] != 'O' && str[i] != 'U')
+                {
+                    newString += str[i];
+                }
+            }
+            return newString;
+        }
+        public static string Solution(string str)
+        {
+            string newString = "";
+            for (int i = str.Length - 1; i > -1; i--)
+            {
+                newString += str[i];
+            }
+            return newString;
+        }
+        public static bool IsSquare(int n)
+        {
+            if (n < 0)
+            {
+                return false;
+            }
+            double answer = Math.Sqrt(n);
+            if (n % 1 == 0)
+            {
+                return true;
 
+            }
+            else
+            {
+                return false;
+            }
+
+        }*/
 
     }
+
+    
 }
 
 
