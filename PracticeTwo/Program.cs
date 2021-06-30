@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PracticeTwo
 {
@@ -734,9 +735,59 @@ namespace PracticeTwo
 
         }*/
 
-    }
+        /* Codewars
+        public static string SquareDigits(int n)
+        {
+            string newN = Convert.ToString(n);
+            string numbers = "";
+            for (int i = 0; i < newN.Length; i++)
+            {
+                char indexing = newN[i];
+                int convert = int.Parse(indexing.ToString());
+                numbers += (convert * convert);
+            }
+            return numbers;
 
-    
+
+
+        }
+        public static int PositiveSum(int[] arr)
+        {
+            var numbers = arr.Where(digits => digits > 0).Sum();
+            return numbers;
+        }
+        public static List<int> Odds(List<int> values)
+        {
+            var odds = values.Where(num => (num % 2) != 0);
+            List<int> answer = odds.ToList();
+            return answer;
+        }
+        public static string HighAndLow(string numbers)
+        {
+            List<char> numList = new List<char>();
+            foreach (var item in numbers)
+            {
+                numList.Add(item);
+            }
+            numList.Sort();
+            var highest = numList[numList.Count - 1];
+            var lowest = numList[0];
+            string max = Convert.ToString(highest);
+            string min = Convert.ToString(lowest);
+            return $"{max} {min}";
+        }
+        static void Main(string[] args)
+        {
+            int[] newOne = new int[] { 1, 2, 3, 4, 5, 6, 8, 9 };
+            Console.WriteLine(FirstNonConsecutive(newOne));
+
+        }
+        public static object FirstNonConsecutive(int[] arr)
+        {
+            object findNon = arr.Find(1, 0) 
+
+        }*/
+    }
 }
 
 
