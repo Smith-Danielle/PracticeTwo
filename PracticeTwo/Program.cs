@@ -787,6 +787,324 @@ namespace PracticeTwo
             object findNon = arr.Find(1, 0) 
 
         }*/
+        /* Codewars
+        static void Main(string[] args)
+        {
+            var squares = Enumerable.Range(1, 100).Average(x => x * x);
+            Console.WriteLine(squares);
+            Console.WriteLine(AlphabetPosition("My name is Danielle"));
+        }
+
+        public static double basicOp(char operation, double value1, double value2)
+        {
+            double answer = 0;
+            if (operation == '+')
+            {
+                answer = value1 + value2;
+            }
+            else if (operation == '-')
+            {
+                answer = value1 - value2;
+            }
+            else if (operation == '*')
+            {
+                answer = value1 * value2;
+            }
+            else if (operation == '/')
+            {
+                answer = value1 / value2;
+            }
+            else if (operation == '%')
+            {
+                answer = value1 % value2;
+            }
+            return answer;
+        }
+        public static int sumTwoSmallestNumbers(int[] numbers)
+        {
+            Array.Sort(numbers);
+            var num = numbers.Take(2).Sum();
+            return num;
+
+
+        }
+        public static string AlphabetPosition(string text)
+        {
+            string answer = string.Empty;
+            string lower = text.ToLower();
+            foreach (var item in lower)
+            {
+                if (item == 'a')
+                {
+                    answer += '1';
+                    answer += ' ';
+                }
+                else if (item == 'b')
+                {
+                    answer += '2';
+                    answer += ' ';
+                }
+                else if (item == 'c')
+                {
+                    answer += '3';
+                    answer += ' ';
+                }
+                else if (item == 'd')
+                {
+                    answer += '4';
+                    answer += ' ';
+                }
+                else if (item == 'e')
+                {
+                    answer += '5';
+                    answer += ' ';
+                }
+                else if (item == 'f')
+                {
+                    answer += '6';
+                    answer += ' ';
+                }
+                else if (item == 'g')
+                {
+                    answer += '7';
+                    answer += ' ';
+                }
+                else if (item == 'h')
+                {
+                    answer += '8';
+                    answer += ' ';
+                }
+                else if (item == 'i')
+                {
+                    answer += '9';
+                    answer += ' ';
+                }
+                else if (item == 'j')
+                {
+                    answer += '1';
+                    answer += '0';
+                    answer += ' ';
+                }
+                else if (item == 'k')
+                {
+                    answer += '1';
+                    answer += '1';
+                    answer += ' ';
+                }
+                else if (item == 'l')
+                {
+                    answer += '1';
+                    answer += '2';
+                    answer += ' ';
+                }
+                else if (item == 'm')
+                {
+                    answer += '1';
+                    answer += '3';
+                    answer += ' ';
+                }
+                else if (item == 'n')
+                {
+                    answer += '1';
+                    answer += '4';
+                    answer += ' ';
+                }
+                else if (item == 'o')
+                {
+                    answer += '1';
+                    answer += '5';
+                    answer += ' ';
+                }
+                else if (item == 'p')
+                {
+                    answer += '1';
+                    answer += '6';
+                    answer += ' ';
+                }
+                else if (item == 'q')
+                {
+                    answer += '1';
+                    answer += '7';
+                    answer += ' ';
+                }
+                else if (item == 'r')
+                {
+                    answer += '1';
+                    answer += '8';
+                    answer += ' ';
+                }
+                else if (item == 's')
+                {
+                    answer += '1';
+                    answer += '9';
+                    answer += ' ';
+                }
+                else if (item == 't')
+                {
+                    answer += '2';
+                    answer += '0';
+                    answer += ' ';
+                }
+                else if (item == 'u')
+                {
+                    answer += '2';
+                    answer += '1';
+                    answer += ' ';
+                }
+                else if (item == 'v')
+                {
+                    answer += '2';
+                    answer += '2';
+                    answer += ' ';
+                }
+                else if (item == 'w')
+                {
+                    answer += '2';
+                    answer += '3';
+                    answer += ' ';
+                }
+                else if (item == 'x')
+                {
+                    answer += '2';
+                    answer += '4';
+                    answer += ' ';
+                }
+                else if (item == 'y')
+                {
+                    answer += '2';
+                    answer += '5';
+                    answer += ' ';
+                }
+                else if (item == 'z')
+                {
+                    answer += '2';
+                    answer += '6';
+                    answer += ' ';
+                }
+            
+                
+            }
+            var newAnswer = answer.Remove(answer.Length - 1);
+            return answer;
+        }
+        public static string AlphabetPosition(string text)
+        {
+            string lower = text.ToLower();
+            string alpha = " abcdefghijklmnopqrstuvwxyz";
+            string newString = string.Empty;
+            foreach (var item in text)
+            {
+                var index = alpha.IndexOf(item);
+                if (index > -1)
+                {
+                    newString += index;
+                }
+            }
+            
+            return newString;
+        }*/
+        //Unique In Order
+        /* CodeWars
+        public static bool Solution(string str, string ending)
+        {
+            bool answer = str.EndsWith(ending);
+            return answer;
+        }
+        public static IEnumerable<T> UniqueInOrder<T>(IEnumerable<T> iterable)
+        {
+            var newList = new List<T>();
+            foreach (var item in iterable)
+            {
+                if (newList.Count == 0 || !newList.Last().Equals(item))
+                {
+                    newList.Add(item);
+                }
+            }
+            return newList;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(PigIt("Hello World !"));
+        }
+        public static string PigIt(string str)
+        {
+            List<string> temp = new List<string>();
+            List<string> lastPart = new List<string>();
+            List<string> allTogether = new List<string>();
+            var strNew = str.Split(" ");
+            foreach (var item in strNew)
+            {
+                temp.Add(item.Substring(0, 1));
+                lastPart.Add(item.Substring(1));
+
+                allTogether.Add(String.Concat(lastPart.Last(), temp.Last()));
+            }
+            List<string> final = new List<string>();
+            foreach (var item in allTogether)
+            {
+                if (item == "!" || item == "." || item == "?")
+                {
+                    final.Add(item);
+                }
+                else
+                {
+                    final.Add(item.Insert(item.Length, "ay"));
+                }
+            }
+            
+            //var newString = allTogether.Select(item => item.Insert(item.Length, "ay"));
+            var answerString = string.Join(" ", final);
+
+            
+            return answerString;
+            
+        }
+        public static IEnumerable<string> GooseFilter(IEnumerable<string> birds)
+        {
+            List<string> newString= new List<string>();
+            
+            foreach (var item in birds)
+            {
+                if (item != "African" || item != "Roman Tufted" || item != "Toulouse" || item != "Pilgrim" || item != "Steinbacher")
+                {
+                    newString.Add(item);
+                }
+            }
+            return newString;
+        }*/
+        /* CodeWars
+        static void Main(string[] args)
+        {
+            FindShort("Danielle danica Marrissa smith");
+        }
+
+        public static void HighAndLow(string numbers)
+        {
+            var newString = numbers.Split(" ");
+            List<int> num = new List<int>();
+            foreach (var item in newString)
+            {
+                num.Add(Convert.ToInt32(item));
+
+            }
+            var max = num.Max();
+            var min = num.Min();
+            Console.WriteLine($"{max} {min}");
+           
+            
+            
+
+                }
+        public static void FindShort(string s)
+        {
+            var newString = s.Split(" ");
+            var sorted = newString.OrderBy(item => item.Length);
+            var first = sorted.First().Count();
+
+                Console.WriteLine(first);
+            
+        }*/
+
     }
 }
 
