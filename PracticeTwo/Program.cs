@@ -1104,8 +1104,55 @@ namespace PracticeTwo
                 Console.WriteLine(first);
             
         }*/
+        static void Main(string[] args)
+        {
+            int[] dan = new int[] { 1, 1, 6, 4, 4, 6, 4 };
+            // Console.WriteLine(find_it(dan));
+            //Console.WriteLine(DescendingOrder(123456789));
+            Danielle("danielle");
+            
+        }
+        public static int find_it(int[] seq)
+        {
+            
+            List<string> sList = new List<string>();
+           
+            foreach (var item in seq)
+            {
+                
+                sList.Add(Convert.ToString(item));
+            }
+        
+            var find = sList.GroupBy(item => item).Where(item => item.Count() % 2 != 0).Select(item => item.Key);
+            var answer = string.Join(" ", find);
+            var answerFinal = Convert.ToInt32(answer);
+            return answerFinal;
+        }
+        public static int DescendingOrder(int num)
+        {
+            
+            List<int> ints = new List<int>();
+            List<string> str = new List<string>();
+            var toString = Convert.ToString(num);
+            var newest = toString.ToList();
+            var order = newest.OrderByDescending(item => item);
+            var answer = string.Join("", order);
+            var finalAnswer = Convert.ToInt32(answer);
+            return finalAnswer;
+          
+        }
+        public static void Danielle(string input)
+        {
 
+            var inputNew = input.ToList();
+            inputNew.Reverse();
+            var inputString = string.Join("", inputNew);
+            Console.WriteLine(inputString);
+        
+        }
     }
+    
+
 }
 
 
