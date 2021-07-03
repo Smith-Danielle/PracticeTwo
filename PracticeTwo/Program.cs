@@ -1104,6 +1104,7 @@ namespace PracticeTwo
                 Console.WriteLine(first);
             
         }*/
+        /* CodeWars
         static void Main(string[] args)
         {
             int[] dan = new int[] { 1, 1, 6, 4, 4, 6, 4 };
@@ -1149,9 +1150,198 @@ namespace PracticeTwo
             var inputString = string.Join("", inputNew);
             Console.WriteLine(inputString);
         
+        }*/
+        /* Codewars
+        static void Main(string[] args)
+        {
+            string word = "Hello there my name is Danielle Smith";
+            Console.WriteLine(SpinWords(word));
         }
+        public static string SpinWords(string sentence)
+        {
+            List<string> myList = new List<string>();
+            var myFirstList = sentence.Split(" ");
+            foreach (var item in myFirstList)
+            {
+                if (item.Length >= 5)
+                {
+                    var inputNew = item.ToList();
+                    inputNew.Reverse();
+                    var inputString = string.Join("", inputNew);
+                    myList.Add(inputString);
+
+                }
+                else
+                {
+                    myList.Add(item);
+                }
+            }
+            var answer = string.Join(" ", myList);
+            return answer;
+            
+        }
+        public static bool XO(string input)
+        {
+            bool answer = true;
+            string lower = input.ToLower();
+            int xCount = 0;
+            int oCount = 0;
+            foreach (var item in lower)
+            {
+                if (item == 'o')
+                {
+                    oCount++;
+                }
+                else if (item == 'x')
+                {
+                    xCount++;
+                }
+            }
+            if (xCount == 0 && oCount == 0)
+            {
+                answer = true;
+            }
+            else if (xCount == oCount)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+            return answer;
+        }
+    }*/
+        /* CodeWars
+            static void Main(string[] args)
+        {
+            List<object> test = new List<object>() { 1, 2, "danielle", 3, '9', "100", "abcd", 'a' };
+            Console.WriteLine(GetIntegersFromList(test));
+            ToJadenCase("danielle is cool");
+            
+        }
+        public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
+        {
+
+            /*bool testing = true;
+            List<int> num = new List<int>();
+            foreach (var item in listOfItems)
+            {
+                string number = string.Empty;
+                number = item.ToString();
+                int nums;
+
+                testing = int.TryParse(number, out nums);
+                if (nums > 0)
+                {
+                    num.Add(nums);
+                }
+
+            }
+            IEnumerable<int> answer = num as IEnumerable<int>;
+            return num;
+
+            var newList = listOfItems.OfType<int>();
+            return newList;
+
+        }
+        public static void ToJadenCase(string phrase)
+        {
+            List<string> temp = new List<string>();
+            List<string> temp2 = new List<string>();
+            List<string> combined = new List<string>();
+            var newPhrase = phrase.Split(" ");
+            foreach (var item in newPhrase)
+            {
+
+                temp.Add(item.Substring(0, 1).ToUpper());
+                temp2.Add(item.Substring(1));
+                combined.Add(string.Concat(temp.Last(), temp2.Last()));
+
+            }
+            var answer = string.Join("", combined);
+            foreach (var item in temp)
+            {
+                Console.WriteLine(item);
+            }
+        }*/
+        /*Extension practice
+        static void Main(string[] args)
+        {
+       
+
+            int test = 5;
+            string testOne = "Danielle";
+            testOne.Print();
+            test.Print();*/
+        
+        /*Code Wars
+        static void Main(string[] args)
+        {
+            //Console.WriteLine(IsIsogram("danielle"));
+            //Console.WriteLine(IsIsogram("trouble"));
+            //List<int> myList = new List<int>() { 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1 };
+            //IEnumerable<int> example = myList;
+            //Console.WriteLine(GetUnique(myList));
+        }
+
     }
-    
+        public static bool IsIsogram(string str)
+        {
+            
+            string lower = str.ToLower();
+            var newList = lower.ToList();
+            newList.Sort();
+            for (int i = 0; i < newList.Count - 1; i++)
+            {
+                if (newList[i] == newList[i + 1])
+                {
+                    return false;
+                }
+            }
+            return true;
+           
+          
+
+        }
+        public static int GetUnique(IEnumerable<int> numbers)
+        {
+
+            int answer = 0;
+            var newList = numbers.ToList();
+            newList.Sort();
+            for (int i = 0; i < newList.Count - 1; i++ )
+            {
+                if (newList[i] != newList[i + 1])
+                {
+                    
+                    if (newList[i] == newList[2])
+                    {
+                       answer = (newList[i + 1]);
+                    }
+                    else
+                    {
+                        answer = (newList[i]);
+                    }
+                    
+                   
+                    
+                }
+            }
+            return answer;
+            
+            
+        }
+        public static void Add<T>(T num1, T num2)
+        {
+           
+            Console.WriteLine(Convert.ToInt16(num1) + Convert.ToInt16(num2));
+        }*/
+        
+
+
+    } 
+
 
 }
 
