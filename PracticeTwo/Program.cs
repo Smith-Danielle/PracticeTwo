@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PracticeTwo
 {
@@ -1337,6 +1339,7 @@ namespace PracticeTwo
            
             Console.WriteLine(Convert.ToInt16(num1) + Convert.ToInt16(num2));
         }*/
+        /* Codewars
         static void Main(string[] args)
         {
             Console.WriteLine(Maskify("DanielleSmith123"));
@@ -1409,7 +1412,164 @@ namespace PracticeTwo
 
        
 
+        }*/
+        /* SoloLearn
+        static void Main(string[] args)
+        {
+            SortedList<string, int> sorted = new SortedList<string, int>();
+            sorted.Add("Solo", 2);
+            sorted.Add("Danielle", 10);
+            sorted.Add("Zandy", 1);
+            sorted.Add("Apple", 22);
+            //sorted["Danielle"] = 25;
+            foreach (var item in sorted)
+            {
+                Console.WriteLine(item);
+                
+            }
+            bool answer = sorted.ContainsKey("Danielle");
+            Console.WriteLine(answer);
+
+            List<int> dan = new List<int>();
+            dan.Add(8);
+            dan.Add(23);
+            foreach (var item in dan)
+            {
+                Console.WriteLine(item);
+
+            }
+            Dictionary<string, int> sorted1 = new Dictionary<string, int>();
+            sorted1.Add("Smith", 7);
+            sorted1.Add("Shinobi", 22);
+            sorted1.Add("Pillow", 99);
+            sorted1.Add("XYZ", 1);
+            sorted1.Add("Add", 2);
+            sorted1["Smith"] = 25;
+            foreach (var item in sorted1)
+            {
+                Console.WriteLine(item);
+
+            }
+            HashSet<int> sorted2 = new HashSet<int>();
+            sorted2.Add(7);
+            sorted2.Add(22);
+            sorted2.Add(99);
+            sorted2.Add(1);
+            sorted2.Add(2);
+            
+            foreach (var item in sorted2)
+            {
+                Console.WriteLine(item);
+
+            }
+
+
+
+        }*/
+        /*SoloLearn
+        static void Main(string[] args)
+        {
+            double discount = Convert.ToInt32(Console.ReadLine());
+
+            Dictionary<string, double> coffee = new Dictionary<string, double>();
+            coffee.Add("Americano", 50);
+            coffee.Add("Latte", 70);
+            coffee.Add("Flat White", 60);
+            coffee.Add("Espresso", 60);
+            coffee.Add("Cappuccino", 80);
+            coffee.Add("Mocha", 90);
+
+            double discountRate = discount * .01;
+
+            List<double> valuesOnly = new List<double>();
+            
+            foreach (var item in coffee.Values)
+            {
+                valuesOnly.Add(Math.Ceiling(item - (item * discountRate)));
+            }
+         
+            coffee["Americano"] = valuesOnly[0];
+            coffee["Latte"] = valuesOnly[1];
+            coffee["Flat White"] = valuesOnly[2];
+            coffee["Espresso"] = valuesOnly[3];
+            coffee["Cappuccino"] = valuesOnly[4];
+            coffee["Mocha"] = valuesOnly[5];
+
+            foreach (var item in coffee.ToArray())
+            {
+                Console.WriteLine($"{item.Key}: {item.Value}");
+            }
+
+        }*/
+        /* Codewars
+        static void Main(string[] args)
+        {
+            Console.WriteLine(GetSum(0, -1));
         }
+        public static string GetMiddle(string s)
+        {
+            int length = s.Length;
+            double middle = length / 2;
+            int evenMiddle = Convert.ToInt32(middle - 1); // and middle
+            int oddMiddle = Convert.ToInt32(Math.Floor(middle - 0.5));
+            if (length == 1)
+            {
+                return s;
+            }
+            else if (length % 2 == 0)
+            {
+                return s.Substring(evenMiddle, 2);
+            }
+            else
+            {
+                return s.Substring(oddMiddle);
+            }
+        }
+        public static int summation(int num)
+        {
+            if (num <= 9)
+            {
+                return num;
+            }
+            int sum = 0;
+            for (int i = 0; i < num + 1; i++)
+            {
+                sum += i;
+                
+            }
+            return sum;
+        }
+        public static int GetSum(int a, int b)
+        {
+            if (a == b)
+            {
+                return a;
+            }
+            if (a < b)
+            {
+                int sum = 0;
+                for (int i = a; i < b + 1; i++)
+                {
+                    sum += i;
+                }
+                return sum;
+            }
+            else
+            {
+                int sum1 = 0;
+                for (int i = b; i < a + 1; i++)
+                {
+                    sum1 += i;
+                }
+                return sum1;
+            }
+        }
+        public static string ReplaceDots(string str)
+        {
+            var answer = str.Replace('.', '-');
+            return answer;
+        }*/
+
 
 
 
