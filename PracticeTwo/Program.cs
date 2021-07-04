@@ -1274,7 +1274,7 @@ namespace PracticeTwo
             string testOne = "Danielle";
             testOne.Print();
             test.Print();*/
-        
+
         /*Code Wars
         static void Main(string[] args)
         {
@@ -1337,7 +1337,81 @@ namespace PracticeTwo
            
             Console.WriteLine(Convert.ToInt16(num1) + Convert.ToInt16(num2));
         }*/
-        
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Maskify("DanielleSmith123"));
+            long dan = 12837439;
+            Digitize(dan);
+        }
+        public static string Maskify(string cc)
+        {
+            if (cc.Length == 1 || cc == "")
+            {
+                return cc;
+            }
+            int count = cc.Length;
+            int countToIndex = count - 4;
+            string newString = String.Empty;
+            for (int i = 0; i < countToIndex; i++)
+            {
+                newString += "#";
+            }
+            
+            for (int i = 0; i < cc.Length; i++)
+            {
+                if (i > countToIndex - 1)
+                {
+                    newString += cc[i];
+                }
+            }
+            return newString;
+            
+        }
+        public static IEnumerable<string> FriendOrFoe(string[] names)
+        {
+            List<string> name = new List<string>();
+            foreach (var item in names)
+            {
+                if(item.Length == 4)
+                {
+                    name.Add(item);
+                }
+            }
+            return name;
+        }
+        public static string OddOrEven(int[] array)
+        {
+            if (array.Length == 0)
+            {
+                return "even";
+            }
+            int sum = array.Sum();
+            if (sum % 2 == 0)
+            {
+                return "even";
+            }
+            else
+            {
+                return "odd";
+            }
+        }
+        public static int[] Maps(int[] x)
+        {
+            var answer = x.Select(item => item * 2).ToArray();
+            return answer;
+        }
+            public static void Digitize(long n)
+        {
+            
+         
+
+            var answer1 = n.ToString().Select(x => long.Parse(x.ToString())).Reverse().ToArray();
+
+       
+
+        }
+
+
 
 
     } 
