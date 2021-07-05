@@ -1569,6 +1569,180 @@ namespace PracticeTwo
             var answer = str.Replace('.', '-');
             return answer;
         }*/
+        public static int SquareSum(int[] n)
+        {
+            var sum = n.Select(item => Math.Pow(item, 2)).Sum();
+            return Convert.ToInt32(sum);
+        }
+        public static int Litres(double time)
+        {
+            var answer = Math.Floor(time * 0.5);
+            return Convert.ToInt32(answer);
+        }
+        public static bool isDivisible(long n, long x, long y)
+        {
+            bool xD;
+            bool yD;
+            bool answer;
+            if (n % x == 0)
+            {
+                xD = true;
+            }
+            else
+            {
+                xD = false;
+            }
+            if (n % y == 0)
+            {
+                yD = true;
+            }
+            else
+            {
+                yD = false;
+            }
+            if (xD == yD)
+            {
+                answer = true;
+            }
+            else
+            {
+                answer = false;
+            }
+            return answer;
+        }
+        public static int StringToNumber(String str)
+        {
+            return Convert.ToInt32(str);
+        }
+        static void Main(string[] args)
+        {
+            High("b aa");
+        }
+        public static void High(string s)
+        {
+            var newString = s.Split(" ");
+            List<int> number = new List<int>();
+            for (int i = 0; i < newString.Length; i++)
+            {
+                var words = newString[i].ToList();
+                int count = 0;
+                foreach (var item in words)
+                {
+                    if (item == 'a')
+                    {
+                        count += 1;
+                    }
+                    if (item == 'b')
+                    {
+                        count += 2;
+                    }
+                    if (item == 'c')
+                    {
+                        count += 3;
+                    }
+                    if (item == 'd')
+                    {
+                        count += 4;
+                    }
+                    if (item == 'e')
+                    {
+                        count += 5;
+                    }
+                    if (item == 'f')
+                    {
+                        count += 6;
+                    }
+                    if (item == 'g')
+                    {
+                        count += 7;
+                    }
+                    if (item == 'h')
+                    {
+                        count += 8;
+                    }
+                    if (item == 'i')
+                    {
+                        count += 9;
+                    }
+                    if (item == 'j')
+                    {
+                        count += 10;
+                    }
+                    if (item == 'k')
+                    {
+                        count += 11;
+                    }
+                    if (item == 'l')
+                    {
+                        count += 12;
+                    }
+                    if (item == 'm')
+                    {
+                        count += 13;
+                    }
+                    if (item == 'n')
+                    {
+                        count += 14;
+                    }
+                    if (item == 'o')
+                    {
+                        count += 15;
+                    }
+                    if (item == 'p')
+                    {
+                        count += 16;
+                    }
+                    if (item == 'q')
+                    {
+                        count += 17;
+                    }
+                    if (item == 'r')
+                    {
+                        count += 18;
+                    }
+                    if (item == 's')
+                    {
+                        count += 19;
+                    }
+                    if (item == 't')
+                    {
+                        count += 20;
+                    }
+                    if (item == 'u')
+                    {
+                        count += 21;
+                    }
+                    if (item == 'v')
+                    {
+                        count += 22;
+                    }
+                    if (item == 'w')
+                    {
+                        count += 23;
+                    }
+                    if (item == 'x')
+                    {
+                        count += 24;
+                    }
+                    if (item == 'y')
+                    {
+                        count += 25;
+                    }
+                    if (item == 'z')
+                    {
+                        count += 26;
+                    }
+                }
+                number.Add(count);
+                count = 0;
+
+            }
+            var maxNum = number.Max();
+            var indexMax = number.IndexOf(maxNum);
+            var answer = newString[indexMax];
+            Console.WriteLine(answer);
+            
+        }
 
 
 
